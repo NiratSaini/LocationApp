@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_default.png",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/drawable-xhdpi/button_default.png"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_pressed.png",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/drawable-xhdpi/button_pressed.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_pressed.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-xhdpi/button_pressed.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_on.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-xhdpi/button_on.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_default.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-xhdpi/button_default.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_on.png",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/drawable-xhdpi/button_on.png"
+    }
+]

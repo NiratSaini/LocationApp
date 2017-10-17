@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>WifiReceiver.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debugAndroidTest</a> &gt; <a href="index.source.html" class="el_package">umd.mindlab.objects</a> &gt; <span class="el_source">WifiReceiver.java</span></div><h1>WifiReceiver.java</h1><pre class="source lang-java linenums">package umd.mindlab.objects;
+
+import java.util.*;
+
+import umd.mindlab.main.LocateMeActivity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.location.Location;
+import android.net.wifi.ScanResult;
+import android.util.Log;
+
+public class WifiReceiver extends BroadcastReceiver {
+<span class="nc" id="L14">	public String TAG = &quot;WifiReceiver&quot;;</span>
+	public LocateMeActivity find;
+	public Location currentLocation;
+
+	public WifiReceiver(LocateMeActivity LocateMeActivity) {
+<span class="nc" id="L19">		super();</span>
+<span class="nc" id="L20">		find = LocateMeActivity;</span>
+<span class="nc" id="L21">	}</span>
+
+	@Override
+	public void onReceive(Context arg0, Intent arg1) {
+<span class="nc" id="L25">		String xml = &quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;\n&lt;data&gt;\n&quot;;</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">		if(currentLocation != null){</span>
+<span class="nc" id="L27">			xml = xml + &quot;&lt;currentlocation&gt;&quot;;</span>
+<span class="nc" id="L28">			xml = xml + &quot;&lt;lat&gt;&quot; + currentLocation.getLatitude() + &quot;&lt;/lat&gt;&quot;;</span>
+<span class="nc" id="L29">			xml = xml + &quot;&lt;lon&gt;&quot; + currentLocation.getLongitude() + &quot;&lt;/lon&gt;&quot;;</span>
+<span class="nc" id="L30">			xml = xml + &quot;&lt;alt&gt;&quot; + currentLocation.getAltitude() + &quot;&lt;/alt&gt;&quot;;</span>
+<span class="nc" id="L31">			xml = xml + &quot;&lt;/currentlocation&gt;&quot;;</span>
+		}
+
+<span class="nc" id="L34">		List&lt;ScanResult&gt; results = find.wifi.getScanResults();</span>
+		
+<span class="nc" id="L36">		System.out.println(&quot;Number of signals detected:&quot; + results.size() + &quot;\n&quot;);</span>
+		
+		//Store unique MAC address alongwith the maximum signal strength received for that MAC address 
+<span class="nc" id="L39">		HashMap listAccessPoints = new HashMap();</span>
+<span class="nc" id="L40">		HashMap listAccessPointsSSID = new HashMap();</span>
+<span class="nc" id="L41">		HashMap listAccessPointsFreq = new HashMap();</span>
+		
+<span class="nc" id="L43">		System.out.println(&quot;MAC addresses before filtering: &quot;);</span>
+<span class="nc bnc" id="L44" title="All 2 branches missed.">		for (ScanResult result : results) {</span>
+<span class="nc" id="L45">			String mac = result.BSSID;</span>
+<span class="nc" id="L46">			String name = result.SSID;</span>
+<span class="nc" id="L47">			int signalStrength = result.level;</span>
+<span class="nc" id="L48">			int freq = result.frequency;</span>
+			// textStatus.append(&quot;\n\n&quot; + result.toString());
+<span class="nc" id="L50">			System.out.println(mac + &quot;,&quot; + name+&quot;,&quot;+signalStrength + &quot;,&quot; + freq);			</span>
+<span class="nc" id="L51">		}</span>
+		
+<span class="nc" id="L53">		xml = xml + &quot;&lt;accesspoints&gt;\n&quot;;</span>
+		
+<span class="nc bnc" id="L55" title="All 2 branches missed.">		for (ScanResult result : results) {</span>
+<span class="nc" id="L56">			String mac = result.BSSID.trim();</span>
+<span class="nc" id="L57">			String name = result.SSID.trim();</span>
+<span class="nc" id="L58">			int signalStrength = result.level;</span>
+<span class="nc" id="L59">			int freq = result.frequency;</span>
+<span class="nc" id="L60">			xml = xml + &quot;&lt;accesspoint&gt;\n&quot;;</span>
+<span class="nc" id="L61">			xml = xml + &quot;&lt;name&gt;&quot; + name + &quot;&lt;/name&gt;\n&quot;;</span>
+<span class="nc" id="L62">			xml = xml + &quot;&lt;mac&gt;&quot; + mac + &quot;&lt;/mac&gt;\n&quot;;</span>
+<span class="nc" id="L63">			xml = xml + &quot;&lt;signal&gt;&quot; + signalStrength + &quot;&lt;/signal&gt;\n&quot;;</span>
+<span class="nc" id="L64">			xml = xml + &quot;&lt;freq&gt;&quot; + freq + &quot;&lt;/freq&gt;\n&quot;;</span>
+<span class="nc" id="L65">			xml = xml + &quot;&lt;/accesspoint&gt;\n&quot;;	</span>
+			// textStatus.append(&quot;\n\n&quot; + result.toString());
+			/*if (!listAccessPoints.containsKey(mac)) {
+				listAccessPoints.put(mac, signalStrength);
+				listAccessPointsSSID.put(mac,name);
+				System.out.println(mac + &quot; &quot; + name + &quot; added to accesspoint lists&quot;);
+			} else {
+				if(signalStrength &gt; Integer.parseInt(listAccessPoints.get(mac).toString())) {
+					System.out.println(signalStrength + &quot; &gt; &quot; + listAccessPoints.get(mac).toString());
+					listAccessPoints.put(mac, signalStrength);
+					listAccessPointsSSID.put(mac, name);
+					System.out.println(mac + &quot; &quot; + signalStrength);
+				}				
+			}*/
+			
+<span class="nc" id="L80">		}</span>
+<span class="nc" id="L81">		xml = xml + &quot;&lt;/accesspoints&gt;\n&lt;/data&gt;\n&quot;;</span>
+				
+		//System.out.println(&quot;Number of unique MAC addresses: &quot; + listAccessPoints.size());
+		
+		/*Iterator it = listAccessPoints.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry pairs = (Map.Entry)it.next();
+			String mackey  = pairs.getKey().toString();
+			xml = xml + &quot;&lt;accesspoint&gt;\n&quot;;
+			xml = xml + &quot;&lt;name&gt;&quot; + listAccessPointsSSID.get(mackey) + &quot;&lt;/name&gt;\n&quot;;
+			xml = xml + &quot;&lt;mac&gt;&quot; + mackey+&quot;0&quot; + &quot;&lt;/mac&gt;\n&quot;;
+			xml = xml + &quot;&lt;signal&gt;&quot; + pairs.getValue() + &quot;&lt;/signal&gt;\n&quot;;
+			xml = xml + &quot;&lt;/accesspoint&gt;\n&quot;;				
+		}
+		xml = xml + &quot;&lt;/accesspoints&gt;\n&lt;/data&gt;\n&quot;;*/
+				
+<span class="nc" id="L97">		find.xml = xml;</span>
+		
+<span class="nc" id="L99">		(new SendWifiInfoTask(find)).execute(xml);</span>
+<span class="nc" id="L100">		Log.v(TAG, xml);</span>
+<span class="nc bnc" id="L101" title="All 2 branches missed.">		if(LocateMeActivity.count &gt; 0){</span>
+<span class="nc" id="L102">			find.wifi.startScan(); </span>
+<span class="nc" id="L103">			LocateMeActivity.count--;</span>
+<span class="nc" id="L104">			Log.v(TAG, &quot;COUNT: &quot; + LocateMeActivity.count);</span>
+		}
+<span class="nc" id="L106">		System.out.println(xml);</span>
+		//(new LogWifiInfoTask()).execute(xml);
+<span class="nc" id="L108">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span>Generated by the Android Gradle plugin 2.2.3</div></body></html>

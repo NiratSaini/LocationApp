@@ -1,0 +1,4 @@
+#Sat Oct 14 14:15:19 EDT 2017
+base.0=/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/1f/main/classes.dex

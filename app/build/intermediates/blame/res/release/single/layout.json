@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/layout/main_two.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/layout/main_two.xml"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/layout/main.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/layout/main_three.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/layout/main_three.xml"
+    }
+]

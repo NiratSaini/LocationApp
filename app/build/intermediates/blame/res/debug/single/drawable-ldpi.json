@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/drawable-ldpi/icon.png",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/drawable-ldpi/icon.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_launcher.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_launcher.png",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    }
+]

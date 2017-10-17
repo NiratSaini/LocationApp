@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable/button_inactive.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable/button_inactive.xml"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable/button_active.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable/button_active.xml"
+    }
+]

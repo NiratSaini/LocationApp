@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-ldpi/ic_launcher.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-ldpi/icon.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-ldpi/icon.png"
+    }
+]

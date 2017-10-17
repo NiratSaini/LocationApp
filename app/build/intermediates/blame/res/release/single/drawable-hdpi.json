@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-hdpi/button_on.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-hdpi/button_on.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-hdpi/ic_launcher.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-hdpi/locateme.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-hdpi/locateme.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-hdpi/icon.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-hdpi/button_pressed.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-hdpi/button_pressed.png"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/release/drawable-hdpi/button_default.png",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/drawable-hdpi/button_default.png"
+    }
+]

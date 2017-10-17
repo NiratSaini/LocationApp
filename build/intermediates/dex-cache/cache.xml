@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/libs/apache-mime4j-0.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="945007627e8d12275d755081a9e609c018e1210d">
+        <dex dex="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/pre-dexed/debug/apache-mime4j-0.6_14362f9511157c51af3dd4ee28391ef130dfb615.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fdca30f45b60c6ba724c26a9ce127975e26d4bcb">
+        <dex dex="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/pre-dexed/debug/jacocoagent_7173bd0278682ab35c43ba6da7baae366b7d6e11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/libs/httpmime-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9ded70b76b604f4b4b499cb15a6f7cd4ce490ba0">
+        <dex dex="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/pre-dexed/debug/httpmime-4.0_e47ff2d67b53a2e767de151f37659fd8d288285b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niratsaini/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_1ec3038464f26a1d535acb6dfcdafd1e9d1f0325.jar" />
+    </item>
+
+</items>

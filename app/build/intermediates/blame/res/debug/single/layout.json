@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/layout/main_three.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/layout/main_three.xml"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/layout/main_two.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/layout/main_two.xml"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/layout/main_two.xml",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/layout/main_two.xml"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/merged/debug/layout/main_three.xml",
+        "source": "/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/src/main/res/layout/main_three.xml"
+    },
+    {
+        "merged": "/Users/mara/Downloads/LocateMe/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/mara/Downloads/LocateMe/app/src/main/res/layout/main.xml"
+    }
+]

@@ -1,0 +1,9 @@
+#Internal package file, do not edit.
+#Sat Oct 14 14:15:19 EDT 2017
+1.file=/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/resources-debug-androidTest.ap_/AndroidManifest.xml
+1.set=ANDROID_RESOURCE
+0.file=/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/1f/main/classes.dex
+1.base=/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/res/resources-debug-androidTest.ap_
+0.base=/Users/niratsaini/Desktop/LocationAndroidApp_Version0/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/1f/main
+0.set=DEX
+count=2
